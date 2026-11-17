@@ -11,4 +11,4 @@ wheels/
 .aider*
 
 #Project
-.excalidraw
+*.excalidraw
