@@ -1,0 +1,6 @@
+
+## Commands
+
+- `test`: Run a test command that prints "The test is working"
+- `--version`: Display the current version of the software
+- `--help`: Show help for commands
