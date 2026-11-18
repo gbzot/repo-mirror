@@ -17,7 +17,25 @@ def test() -> None:
     latest_event = get_latest_structlog_value('repo-mirror.log', 'commit_hash')
     print(f"The latest commit_hash is: {latest_event}")
 
+@main.command()
+def init() -> None:
+    """Initializes the repo-mirror tool"""
+    click.echo("init test")
 
+@main.command()
+def status() -> None:
+    """Checks for the status of the service"""
+    click.echo("status test")
+
+@main.command()
+def start() -> None:
+    """Starts the service"""
+    click.echo("start test")
+
+@main.command()
+def stop() -> None:
+    """Stops the service"""
+    click.echo("stop test")
 #Utilities
 
 def get_latest_structlog_value(log_file_path, target_key):
